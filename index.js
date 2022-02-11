@@ -22,7 +22,7 @@ var EMAILInitialization = {
     * multi_line - saving template html in multi_line field(content type property)
     */
     loadTemplate: function (callback) {
-        this.convertTextAsPerLocale();
+       // this.convertTextAsPerLocale();
         getTemplateFromEntry().then(response => {
             let content = response.entry.full_html_content;
             if (content == "" || content === undefined) {
