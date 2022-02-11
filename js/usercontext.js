@@ -6,9 +6,9 @@ var userContextConfiguration = {
     * @param: userContextObect.
     */
     loadUserContext: async function (userContextObject) {
-       // var bytes = CryptoJS.AES.decrypt(userContextObject, 'secret key 123');
-        //var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8)); 
-        usercontext = userContextObject;
+        var bytes = CryptoJS.AES.decrypt(userContextObject, 'secret key 123');
+        var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8)); 
+        usercontext = decryptedData;
         return "Ok";
     }
 }
