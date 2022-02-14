@@ -9,7 +9,7 @@ var userContextConfiguration = {
         var bytes = CryptoJS.AES.decrypt(userContextObject, 'secret key 123');
         var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8)); 
         usercontext = decryptedData;
-        document.getElementById("teamplatename").value = usercontext.TemplateName;
+        document.getElementById("TemplateName").value = usercontext.TemplateName;
         return "Ok";
     }
 }
