@@ -9,11 +9,7 @@ import translation from './js/translation.js';
 var isSaved = false;
 var mergeTags ;
 var templatename=usercontext.TemplateName;
-$(document).ready(function()
-    {     
-       document.getElementById("templatename").innerText = usercontext.TemplateName;
-       createCustomTiles();
-    });
+
 var EMAILInitialization = {
 
     /*
