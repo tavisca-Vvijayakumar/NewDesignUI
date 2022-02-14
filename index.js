@@ -11,7 +11,7 @@ var mergeTags ;
 var templatename=usercontext.TemplateName;
 $(document).ready(function()
     {     
-       document.getElementById("teamplatename").innerText = usercontext.TemplateName;
+       document.getElementById("templatename").innerText = usercontext.TemplateName;
        createCustomTiles();
     });
 var EMAILInitialization = {
